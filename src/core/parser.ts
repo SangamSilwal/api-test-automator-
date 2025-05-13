@@ -1,4 +1,5 @@
-import SwaggerParser from "../../node_modules/@apidevtools/swagger-parser/lib/index";
+// import SwaggerParser from "../../node_modules/@apidevtools/swagger-parser/lib/index";
+import SwaggerParser from "@apidevtools/swagger-parser";
 
 export async function parseOpenAPISpec(specPath: string): Promise<any> {
     try {

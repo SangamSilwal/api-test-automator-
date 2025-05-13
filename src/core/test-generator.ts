@@ -6,6 +6,7 @@ export function generateTests(apiSpec: OpenAPIV3.Document): any[]
     for(const path in apiSpec.paths)
     {
         const methods = apiSpec.paths[path];
+        console.log(methods)
         for(const method in methods)
         {
             const endpoint = methods[method as OpenAPIV3.HttpMethods];
